@@ -27,3 +27,98 @@ audio{
 audio::-webkit-media-controls-panel{
     background-color: rgb(128,128,255);
 }
+
+
+
+
+@keyframes big{
+    0%{
+        transform: scale(6); 
+        transform:rotateX(20deg); 
+        left: 100px;
+    }
+    25%{
+        transform: scale(6); 
+        transform:rotateX(-20deg);
+    }
+    26%{
+        transform: rotate(200deg);
+        height: 1px;
+        width: 1px;
+    }
+    28%{
+        transform: rotate(-200deg);
+    }
+    30%{
+        transform: rotate(400deg);
+    }
+    34%{
+        transform: rotate(-600deg);
+    }
+    50%{
+        width: 1000px; 
+        height: 1000px;
+        transform:rotateX(20deg);
+    }
+    60%{
+        height: 500px;
+    }
+    65%{
+        width: 500px;
+    }
+    75%{
+        transform: scale(6);
+        transform:rotateX(-20deg);
+    }
+    100%{
+        transform: scale(6); 
+        transform:rotateX(20deg);
+    }
+}
+
+@keyframes hover{
+    10%{
+        background-color:red;
+    }
+    20%{
+        background-color:orangered;
+    }
+    30%{
+        background-color:orange ;
+    }
+    40%{
+        background-color:yellow;
+    }
+    50%{
+        background-color:yellowgreen;
+    }
+    60%{
+        background-color:green;
+    }
+    70%{
+        background-color:blue;
+    }
+    80%{
+        background-color:indigo;
+    }
+    90%{
+        background-color:violet;
+    }
+    100%{
+        background-color: plum;
+    }
+}
+
+
+figure, iframe{
+    animation-name: big;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+figure:hover, iframe:hover{
+    animation-name: hover;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+}
